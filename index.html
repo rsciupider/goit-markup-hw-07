@@ -18,63 +18,65 @@
     <title>Main page</title>
   </head>
   <body>
-    <header class="header-container">
-      <div class="container flex">
-        <div class="flex">
-          <a
-            class="webstudio"
-            href="./index.html"
-            target="_self"
-            title="Strona główna"
-            ><span style="color: #2196f3">Web</span>studio</a
-          >
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <div class="header__menu">
+            <a
+              class="webstudio"
+              href="./index.html"
+              target="_self"
+              title="Strona główna"
+              ><span style="color: #2196f3">Web</span>studio</a
+            >
 
-          <ul class="flex list">
-            <li>
-              <a
-                class="links menu-links-agency font6"
-                href="#"
-                target="_blank"
-                title="Agencja"
-                >Agencja</a
-              >
-            </li>
-            <li>
-              <a
-                class="links font6"
-                href="./porffolio.html"
-                target="_self"
-                title="Portfolio"
-                >Portfolio</a
-              >
-            </li>
+            <ul class="flex list">
+              <li>
+                <a
+                  class="links menu-links-agency font6"
+                  href="#"
+                  target="_blank"
+                  title="Agencja"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a
+                  class="links font6"
+                  href="./porffolio.html"
+                  target="_self"
+                  title="Portfolio"
+                  >Portfolio</a
+                >
+              </li>
 
-            <li>
-              <a class="links font6" href="#" target="_blank" title="Kontakt"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="flex list font">
-            <li>
-              <a class="font12 links" href="mailto:info@devstudio.com">
-                <svg class="envelope-icon">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li>
-              <a class="font12 links icon-position" href="tel:+48111111111">
-                <svg class="smartphone-icon">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a class="links font6" href="#" target="_blank" title="Kontakt"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="flex list font">
+              <li>
+                <a class="font12 links" href="mailto:info@devstudio.com">
+                  <svg class="envelope-icon">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="font12 links icon-position" href="tel:+48111111111">
+                  <svg class="smartphone-icon">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -122,7 +124,10 @@
                 </fieldset>
                 <fieldset class="modal-fieldset">
                   <label class="modal-label" for="textarea">Komentarz</label>
-                  <textarea class="modal-comment" placeholder="Wprowadź tekst"></textarea>
+                  <textarea
+                    class="modal-comment"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
                 </fieldset>
                 <label class="checkbox" for="legal">
                   <input class="legal-input" type="checkbox" id="legal" />
