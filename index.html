@@ -120,23 +120,19 @@
                   </svg>
                   <input class="modal-input" type="email" id="e-mail" />
                 </fieldset>
-                <fieldset class="modal-fieldset modal-comment">
+                <fieldset class="modal-fieldset">
                   <label class="modal-label" for="textarea">Komentarz</label>
-                  <input
-                    class="modal-input comment"
-                    type="textarea"
-                    id="textarea"
-                    placeholder="Wprowadź tekst"
-                  />
+                  <textarea class="modal-comment" placeholder="Wprowadź tekst"></textarea>
                 </fieldset>
-                <label>
+                <label class="checkbox" for="legal">
                   <input class="legal-input" type="checkbox" id="legal" />
-                </label>
-                <span
-                  >Oświadczam iż akceptuję
+                  <svg class="checkbox-icon">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                  </svg>
+                  Oświadczam iż akceptuję
                   <a class="legal-link" href="#">Regulamin</a> i
-                  <a class="legal-link" href="#">Politykę Prywatności</a></span
-                >
+                  <a class="legal-link" href="#">Politykę Prywatności</a>
+                </label>
                 <button class="button-style legal-btn" type="submit">
                   Wyślij
                 </button>
