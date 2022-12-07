@@ -23,17 +23,17 @@
         <div class="header__bar">
           <div class="header__menu">
             <a
-              class="webstudio"
+              class="header__logo"
               href="./index.html"
               target="_self"
               title="Strona główna"
               ><span style="color: #2196f3">Web</span>studio</a
             >
 
-            <ul class="flex list">
+            <ul class="header__menu--navigation">
               <li>
                 <a
-                  class="links menu-links-agency font6"
+                  class="header__tab header__tab--active"
                   href="#"
                   target="_blank"
                   title="Agencja"
@@ -42,25 +42,24 @@
               </li>
               <li>
                 <a
-                  class="links font6"
+                  class="header__tab"
                   href="./porffolio.html"
                   target="_self"
                   title="Portfolio"
                   >Portfolio</a
                 >
               </li>
-
               <li>
-                <a class="links font6" href="#" target="_blank" title="Kontakt"
+                <a class="header__tab" href="#" target="_blank" title="Kontakt"
                   >Kontakt</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <ul class="flex list font">
+            <ul class="header__menu--contacts">
               <li>
-                <a class="font12 links" href="mailto:info@devstudio.com">
+                <a class="header__email" href="mailto:info@devstudio.com">
                   <svg class="envelope-icon">
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
@@ -68,7 +67,7 @@
                 </a>
               </li>
               <li>
-                <a class="font12 links icon-position" href="tel:+48111111111">
+                <a class="header__phone" href="tel:+48111111111">
                   <svg class="smartphone-icon">
                     <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg>
@@ -81,78 +80,84 @@
       </div>
     </header>
     <main>
-      <section class="main-section-container">
-        <div class="container main-section-position">
-          <h1 class="font1">
-            EFEKTYWNE ROZWIĄZANIA <br />
-            DLA WASZEGO BIZNESU
-          </h1>
-          <button class="button-style" type="button" data-modal-open>
-            Zamów usługe
-          </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal-btn" data-modal-close>
-                <svg class="close-icon">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-              <h2 class="modal-headline">
-                Zostaw swoje dane w formularzu poniżej
-              </h2>
-              <form class="modal-form">
-                <fieldset class="modal-fieldset">
-                  <label class="modal-label" for="name">Imie</label>
-                  <svg class="modal-icon">
-                    <use href="./images/icons.svg#icon-person"></use>
+      <section class="banner-section">
+        <div class="container">
+          <div class="banner-section__headline">
+            <h1 class="headline">
+              EFEKTYWNE ROZWIĄZANIA <br />
+              DLA WASZEGO BIZNESU
+            </h1>
+            <button
+              class="banner-section__button"
+              type="button"
+              data-modal-open
+            >
+              Zamów usługe
+            </button>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button class="modal__btn" data-modal-close>
+                  <svg class="close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
                   </svg>
-                  <input class="modal-input" type="text" id="name" />
-                </fieldset>
-                <fieldset class="modal-fieldset">
-                  <label class="modal-label" for="phone">Telefon</label>
-                  <svg class="modal-icon">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  <input class="modal-input" type="tel" id="phone" />
-                </fieldset>
-                <fieldset class="modal-fieldset">
-                  <label class="modal-label" for="e-mail">Email</label>
-                  <svg class="modal-icon">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                  <input class="modal-input" type="email" id="e-mail" />
-                </fieldset>
-                <fieldset class="modal-fieldset">
-                  <label class="modal-label" for="textarea">Komentarz</label>
-                  <textarea
-                    class="modal-comment"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                </fieldset>
-                <label class="checkbox" for="legal">
-                  <input class="legal-input" type="checkbox" id="legal" />
-                  <svg class="checkbox-icon">
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                  Oświadczam iż akceptuję
-                  <a class="legal-link" href="#">Regulamin</a> i
-                  <a class="legal-link" href="#">Politykę Prywatności</a>
-                </label>
-                <button class="button-style legal-btn" type="submit">
-                  Wyślij
                 </button>
-              </form>
+                <h2 class="modal__headline">
+                  Zostaw swoje dane w formularzu poniżej
+                </h2>
+                <form class="modal__form">
+                  <fieldset class="modal__fieldset">
+                    <label class="modal__label" for="name">Imie</label>
+                    <svg class="modal__icon">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    <input class="modal__input" type="text" id="name" />
+                  </fieldset>
+                  <fieldset class="modal__fieldset">
+                    <label class="modal__label" for="phone">Telefon</label>
+                    <svg class="modal__icon">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <input class="modal__input" type="tel" id="phone" />
+                  </fieldset>
+                  <fieldset class="modal__fieldset">
+                    <label class="modal__label" for="e-mail">Email</label>
+                    <svg class="modal__icon">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input class="modal__input" type="email" id="e-mail" />
+                  </fieldset>
+                  <fieldset class="modal__fieldset">
+                    <label class="modal__label" for="textarea">Komentarz</label>
+                    <textarea
+                      class="modal__comment"
+                      placeholder="Wprowadź tekst"
+                    ></textarea>
+                  </fieldset>
+                  <label class="checkbox" for="legal">
+                    <input class="legal-input" type="checkbox" id="legal" />
+                    <svg class="checkbox-icon">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    Oświadczam iż akceptuję
+                    <a class="legal-link" href="#">Regulamin</a> i
+                    <a class="legal-link" href="#">Politykę Prywatności</a>
+                  </label>
+                  <button class="modal__send legal-btn" type="submit">
+                    Wyślij
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="our-attributes">
         <div class="container">
           <h2></h2>
 
-          <ul class="flex list">
+          <ul class="our-attributes__list">
             <li>
-              <div class="icon-position1">
+              <div class="our-attributes__list--item">
                 <svg class="our-attributes-icons">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -164,7 +169,7 @@
               </p>
             </li>
             <li>
-              <div class="icon-position1">
+              <div class="our-attributes__list--item">
                 <svg class="our-attributes-icons">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -176,7 +181,7 @@
               </p>
             </li>
             <li>
-              <div class="icon-position1">
+              <div class="our-attributes__list--item">
                 <svg class="our-attributes-icons">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -188,7 +193,7 @@
               </p>
             </li>
             <li>
-              <div class="icon-position1">
+              <div class="our-attributes__list--item">
                 <svg class="our-attributes-icons">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -479,7 +484,7 @@
       <div class="container footer-position">
         <div>
           <a
-            class="webstudio"
+            class="footer__logo"
             href="./index.html"
             target="_self"
             title="Strona główna"
