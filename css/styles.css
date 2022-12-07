@@ -91,10 +91,6 @@ li {
   color: var(--grey1-clr);
 }
 
-.font9 {
-  line-height: 1.71;
-}
-
 .font10 {
   font-style: normal;
   line-height: 1.71;
@@ -413,6 +409,8 @@ li {
 
 /*----------------------------------------*/
 
+/*-----BUTTONS-----*/
+
 .banner-section__button {
   background: var(--blue-clr);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -452,6 +450,9 @@ li {
   font-weight: 700;
   padding: 10px 41px;
 }
+
+/*------------------------------------------*/
+
 /*-----FOOTER-----*/
 
 .footer__logo {
@@ -490,6 +491,23 @@ li {
   justify-content: center;
   padding-block: 25px;
   background-color: var(--white1-clr);
+}
+
+.our-attributes__list--icon {
+  width: 70px;
+  height: 70px;
+}
+
+.our-attributes__list--headline {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--black-clr);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.our-attributes__list--paragraph {
+  line-height: 1.71;
 }
 
 /*------------------------------------------*/
@@ -742,11 +760,6 @@ img {
   box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.our-attributes-icons {
-  width: 70px;
-  height: 70px;
 }
 
 .icon-position {
